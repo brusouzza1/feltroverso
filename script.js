@@ -1,7 +1,7 @@
 // Dados iniciais da Feltroverso
 const dadosIniciais = {
   pix: '',
-  instagram: '',
+  instagram: 'feltroverso.art',
   whatsapp: '11915885178',
 
   produtos: [
@@ -62,12 +62,13 @@ try {
     ...dadosSalvos
   };
 
-  // Garante que um WhatsApp antigo vazio
-  // não apague o número oficial da loja.
+  if (!dados.instagram) {
+    dados.instagram = dadosIniciais.instagram;
+  }
+
   if (!dados.whatsapp) {
     dados.whatsapp = dadosIniciais.whatsapp;
   }
-
 } catch {
   dados = structuredClone(dadosIniciais);
 }
@@ -116,7 +117,6 @@ function render() {
 
     info.append(name, price);
     card.append(media, info);
-
     $('gallery').append(card);
   });
 
@@ -137,16 +137,12 @@ function render() {
     : '#contato';
 
   $('whatsapp').href = wa
-    ? 'https://wa.me/' + (wa.startsWith('55') ? wa : '55' + wa)
+    ? 'https://wa.me/' +
+      (wa.startsWith('55') ? wa : '55' + wa)
     : '#contato';
 
-  $('instagram').target = ig
-    ? '_blank'
-    : '_self';
-
-  $('whatsapp').target = wa
-    ? '_blank'
-    : '_self';
+  $('instagram').target = ig ? '_blank' : '_self';
+  $('whatsapp').target = wa ? '_blank' : '_self';
 
   $('instagram').rel = 'noopener noreferrer';
   $('whatsapp').rel = 'noopener noreferrer';
@@ -198,9 +194,7 @@ $('copyPix').addEventListener('click', async () => {
 
   try {
     await navigator.clipboard.writeText(dados.pix);
-
-    $('copyPix').textContent =
-      'Chave copiada!';
+    $('copyPix').textContent = 'Chave copiada!';
   } catch {
     $('copyPix').textContent =
       'Selecione e copie a chave acima';
@@ -267,8 +261,10 @@ $('closeEditor').addEventListener('click', () =>
 
 $('save').addEventListener('click', () => {
   dados.pix = $('editPix').value.trim();
+
   dados.instagram =
-    $('editInstagram').value.trim();
+    $('editInstagram').value.trim() ||
+    dadosIniciais.instagram;
 
   dados.whatsapp =
     $('editWhatsapp').value.trim() ||
@@ -304,9 +300,7 @@ $('reset').addEventListener('click', () => {
   }
 
   localStorage.removeItem('feltroverso');
-
-  dados =
-    structuredClone(dadosIniciais);
+  dados = structuredClone(dadosIniciais);
 
   fillEditor();
   render();
