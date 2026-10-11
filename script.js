@@ -1,6 +1,6 @@
 // Dados iniciais da Feltroverso
 const dadosIniciais = {
-  pix: '',
+  pix: '8ab139f2-06ed-4688-95fd-892052db5773',
   instagram: 'feltroverso.art',
   whatsapp: '11915885178',
 
