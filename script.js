@@ -6,45 +6,40 @@ const dadosIniciais = {
 
   produtos: [
     {
-      nome: 'Chaveirinho 01',
-      preco: 'Sob consulta',
-      foto: 'imagens/produto-1.jpg'
+      nome: 'Chaveiro de Fantasma',
+      preco: 'R$ 10,00',
+      foto: 'fantasminha.jpg'
     },
     {
-      nome: 'Chaveirinho 02',
-      preco: 'Sob consulta',
-      foto: 'imagens/produto-2.jpg'
+      nome: 'Chaveiro de Gatinho',
+      preco: 'R$ 10,00',
+      foto: 'gatinho.jpg'
     },
     {
-      nome: 'Chaveirinho 03',
-      preco: 'Sob consulta',
-      foto: 'imagens/produto-3.jpg'
+      nome: 'Chaveiro de Morcego',
+      preco: 'R$ 10,00',
+      foto: 'morceguinho1.jpg'
     },
     {
-      nome: 'Chaveirinho 04',
-      preco: 'Sob consulta',
-      foto: 'imagens/produto-4.jpg'
+      nome: 'Chaveiro de Morcego',
+      preco: 'R$ 10,00',
+      foto: 'morceguinho2.jpg'
     },
     {
-      nome: 'Chaveirinho 05',
-      preco: 'Sob consulta',
-      foto: 'imagens/produto-5.jpg'
+      nome: 'Chaveiro de Ovinho',
+      preco: 'R$ 10,00',
+      foto: 'ovinho.jpg'
     },
     {
-      nome: 'Chaveirinho 06',
-      preco: 'Sob consulta',
-      foto: 'imagens/produto-6.jpg'
+      nome: 'Chaveiro do Jack',
+      preco: 'R$ 10,00',
+      foto: 'jack.jpg'
     },
     {
-      nome: 'Chaveirinho 07',
-      preco: 'Sob consulta',
-      foto: 'imagens/produto-7.jpg'
+      nome: 'Chaveiro Voodoo',
+      preco: 'R$ 10,00',
+      foto: 'voodoo.jpg'
     },
-    {
-      nome: 'Chaveirinho 08',
-      preco: 'Sob consulta',
-      foto: 'imagens/produto-8.jpg'
-    }
   ]
 };
 
