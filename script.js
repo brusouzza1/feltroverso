@@ -13,7 +13,7 @@ const dadosIniciais = {
     {
       nome: 'Chaveiro de Gatinho',
       preco: 'R$ 10,00',
-      foto: 'gatinho.jpg'
+      foto: 'gatinhos.jpg'
     },
     {
       nome: 'Chaveiro de Morcego',
