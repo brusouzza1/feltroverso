@@ -1,0 +1,13 @@
+FELTROVERSO — COMO USAR
+
+1. Extraia o arquivo ZIP.
+2. Abra a pasta feltroverso no VS Code.
+3. Abra index.html no navegador (ou use a extensão Live Server).
+4. Para colocar as oito fotos, renomeie-as como produto-1.jpg até produto-8.jpg e coloque na pasta imagens. Se forem PNG ou WEBP, altere a extensão no script.js.
+5. Para alterar dados de modo permanente para TODOS os visitantes, abra script.js e edite dadosIniciais: pix, instagram, whatsapp e a lista produtos (nome, preco, foto).
+6. O botão 'Editar site' serve para testes locais: os dados ficam salvos apenas no navegador usado e NÃO atualizam o site publicado para outros visitantes.
+7. Para adicionar novos produtos, duplique uma linha de objeto na lista produtos de script.js e coloque a nova foto em imagens.
+8. Para publicar gratuitamente, envie a pasta do site (com index.html na raiz) ao Netlify.
+
+IMPORTANTE: as oito imagens enviadas na conversa não estavam disponíveis como arquivos para inclusão automática. Os espaços já estão preparados.
+O cálculo de troco é uma simulação, não processa pagamentos. A chave Pix é exibida para cópia, não há cobrança automática.
