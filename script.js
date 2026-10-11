@@ -8,7 +8,7 @@ const dadosIniciais = {
     {
       nome: 'Chaveiro de Fantasma',
       preco: 'R$ 10,00',
-      foto: 'fantasminha.jpg'
+      foto: 'jack.jpg'
     },
     {
       nome: 'Chaveiro de Gatinho',
